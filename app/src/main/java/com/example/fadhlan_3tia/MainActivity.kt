@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.fadhlan_3tia.databinding.ActivityMainBinding
+import com.example.fadhlan_3tia.pertemuan_5.LimaActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class MainActivity : AppCompatActivity() {
@@ -48,6 +49,9 @@ class MainActivity : AppCompatActivity() {
                 }
                 .setCancelable(false)
                 .show()
+        }
+        binding.btnlima.setOnClickListener {
+            startActivity(Intent(this, LimaActivity::class.java))
         }
     }
 }
